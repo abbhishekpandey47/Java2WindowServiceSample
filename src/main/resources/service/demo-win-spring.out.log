@@ -1,0 +1,355 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2018-09-03 17:49:53.840  INFO 13108 --- [           main] com.cts.sample.App                       : Starting App v1.0 on PC396927 with PID 13108 (C:\Users\410105\Desktop\service\sample-1.0.jar started by PC396927$ in C:\Users\410105\Desktop\service)
+2018-09-03 17:49:53.848  INFO 13108 --- [           main] com.cts.sample.App                       : No active profile set, falling back to default profiles: default
+2018-09-03 17:49:53.980  INFO 13108 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Mon Sep 03 17:49:53 IST 2018]; root of context hierarchy
+2018-09-03 17:49:57.061  INFO 13108 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15f4cca3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 17:49:58.652  INFO 13108 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 22022 (http)
+2018-09-03 17:49:58.713  INFO 13108 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-09-03 17:49:58.715  INFO 13108 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-09-03 17:49:59.118  INFO 13108 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 17:49:59.118  INFO 13108 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5152 ms
+2018-09-03 17:49:59.356  INFO 13108 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-03 17:49:59.364  INFO 13108 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 17:49:59.385  INFO 13108 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 17:49:59.385  INFO 13108 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 17:49:59.385  INFO 13108 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 17:50:00.897  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByP],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByPost(java.lang.String)
+2018-09-03 17:50:00.899  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByG],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByGet()
+2018-09-03 17:50:00.899  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/makeCsvReport],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings1()
+2018-09-03 17:50:00.899  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getCityData],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings2()
+2018-09-03 17:50:00.900  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getSum],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getSum(com.cts.sample.RequestFormat.ReqFormat)
+2018-09-03 17:50:00.902  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-03 17:50:00.905  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-03 17:50:00.906  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-03 17:50:00.908  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-03 17:50:00.910  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 17:50:00.910  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 17:50:01.268  INFO 13108 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Mon Sep 03 17:49:53 IST 2018]; root of context hierarchy
+2018-09-03 17:50:01.415  INFO 13108 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:50:01.415  INFO 13108 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:50:01.458  INFO 13108 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:50:01.846  INFO 13108 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 17:50:01.859  INFO 13108 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-03 17:50:01.860  INFO 13108 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-03 17:50:01.920  INFO 13108 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-03 17:50:01.946  INFO 13108 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-03 17:50:02.406  INFO 13108 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 22022 (http)
+Please wait making DB conection before initialization....
+Connection Successfull
+2018-09-03 17:50:02.413  INFO 13108 --- [           main] com.cts.sample.App                       : Started App in 9.838 seconds (JVM running for 11.367)
+Application Started!
+2018-09-03 17:51:21.334  INFO 13108 --- [io-22022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 17:51:21.335  INFO 13108 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 17:51:21.368  INFO 13108 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2018-09-03 17:52:04.841  INFO 5560 --- [           main] com.cts.sample.App                       : Starting App v1.0 on PC396927 with PID 5560 (C:\Users\410105\Desktop\service\sample-1.0.jar started by PC396927$ in C:\Users\410105\Desktop\service)
+2018-09-03 17:52:04.849  INFO 5560 --- [           main] com.cts.sample.App                       : No active profile set, falling back to default profiles: default
+2018-09-03 17:52:05.001  INFO 5560 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Mon Sep 03 17:52:04 IST 2018]; root of context hierarchy
+2018-09-03 17:52:08.292  INFO 5560 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15f4cca3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 17:52:09.200  INFO 5560 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 22022 (http)
+2018-09-03 17:52:09.220  INFO 5560 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-09-03 17:52:09.223  INFO 5560 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-09-03 17:52:09.379  INFO 5560 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 17:52:09.379  INFO 5560 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4380 ms
+2018-09-03 17:52:09.577  INFO 5560 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-03 17:52:09.584  INFO 5560 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 17:52:09.586  INFO 5560 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 17:52:09.586  INFO 5560 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 17:52:09.587  INFO 5560 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 17:52:10.613  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByP],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByPost(java.lang.String)
+2018-09-03 17:52:10.615  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByG],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByGet()
+2018-09-03 17:52:10.615  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getSum],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getSum(com.cts.sample.RequestFormat.ReqFormat)
+2018-09-03 17:52:10.615  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getCityData],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings2()
+2018-09-03 17:52:10.615  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/makeCsvReport],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings1()
+2018-09-03 17:52:10.617  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-03 17:52:10.620  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-03 17:52:10.623  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-03 17:52:10.624  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-03 17:52:10.627  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 17:52:10.627  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 17:52:10.912  INFO 5560 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Mon Sep 03 17:52:04 IST 2018]; root of context hierarchy
+2018-09-03 17:52:11.016  INFO 5560 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:52:11.016  INFO 5560 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:52:11.053  INFO 5560 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:52:11.332  INFO 5560 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 17:52:11.342  INFO 5560 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-03 17:52:11.343  INFO 5560 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-03 17:52:11.402  INFO 5560 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-03 17:52:11.422  INFO 5560 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-03 17:52:11.855  INFO 5560 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 22022 (http)
+Please wait making DB conection before initialization....
+Connection Successfull
+2018-09-03 17:52:11.863  INFO 5560 --- [           main] com.cts.sample.App                       : Started App in 8.242 seconds (JVM running for 8.98)
+Application Started!
+2018-09-03 17:52:13.078  INFO 5560 --- [io-22022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 17:52:13.078  INFO 5560 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 17:52:13.103  INFO 5560 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2018-09-03 17:56:53.705  INFO 4556 --- [           main] com.cts.sample.App                       : Starting App v1.0 on PC396927 with PID 4556 (C:\Users\410105\Desktop\service\sample-1.0.jar started by PC396927$ in C:\Users\410105\Desktop\service)
+2018-09-03 17:56:53.712  INFO 4556 --- [           main] com.cts.sample.App                       : No active profile set, falling back to default profiles: default
+2018-09-03 17:56:53.823  INFO 4556 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Mon Sep 03 17:56:53 IST 2018]; root of context hierarchy
+2018-09-03 17:56:56.703  INFO 4556 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d77340a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 17:56:57.556  INFO 4556 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 22022 (http)
+2018-09-03 17:56:57.578  INFO 4556 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-09-03 17:56:57.583  INFO 4556 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-09-03 17:56:57.794  INFO 4556 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 17:56:57.795  INFO 4556 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3975 ms
+2018-09-03 17:56:57.984  INFO 4556 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-03 17:56:57.990  INFO 4556 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 17:56:57.991  INFO 4556 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 17:56:57.991  INFO 4556 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 17:56:57.991  INFO 4556 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 17:56:58.982  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getCityData],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings2()
+2018-09-03 17:56:58.984  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/makeCsvReport],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings1()
+2018-09-03 17:56:58.984  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getSum],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getSum(com.cts.sample.RequestFormat.ReqFormat)
+2018-09-03 17:56:58.985  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByG],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByGet()
+2018-09-03 17:56:58.985  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByP],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByPost(java.lang.String)
+2018-09-03 17:56:58.985  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-03 17:56:58.989  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-03 17:56:58.991  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-03 17:56:58.993  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-03 17:56:58.995  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 17:56:58.996  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 17:56:59.254  INFO 4556 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Mon Sep 03 17:56:53 IST 2018]; root of context hierarchy
+2018-09-03 17:56:59.363  INFO 4556 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:56:59.363  INFO 4556 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:56:59.404  INFO 4556 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 17:56:59.721  INFO 4556 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 17:56:59.734  INFO 4556 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-03 17:56:59.734  INFO 4556 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-03 17:56:59.791  INFO 4556 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-03 17:56:59.816  INFO 4556 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-03 17:57:00.172  INFO 4556 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 22022 (http)
+Please wait making DB conection before initialization....
+Connection Successfull
+2018-09-03 17:57:00.180  INFO 4556 --- [           main] com.cts.sample.App                       : Started App in 7.644 seconds (JVM running for 8.375)
+Application Started!
+2018-09-03 17:57:02.833  INFO 4556 --- [io-22022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 17:57:02.833  INFO 4556 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 17:57:02.856  INFO 4556 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-09-03 18:26:49.527  WARN 4556 --- [io-22022-exec-3] o.s.web.servlet.PageNotFound             : Request method 'GET' not supported
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2018-09-03 20:32:09.977  INFO 5080 --- [           main] com.cts.sample.App                       : Starting App v1.0 on PC396927 with PID 5080 (C:\Users\410105\Desktop\service\sample-1.0.jar started by PC396927$ in C:\Users\410105\Desktop\service)
+2018-09-03 20:32:09.986  INFO 5080 --- [           main] com.cts.sample.App                       : No active profile set, falling back to default profiles: default
+2018-09-03 20:32:10.104  INFO 5080 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Mon Sep 03 20:32:10 IST 2018]; root of context hierarchy
+2018-09-03 20:32:13.233  INFO 5080 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d77340a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-03 20:32:14.127  INFO 5080 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 22022 (http)
+2018-09-03 20:32:14.146  INFO 5080 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-09-03 20:32:14.149  INFO 5080 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-09-03 20:32:14.310  INFO 5080 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-03 20:32:14.310  INFO 5080 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4208 ms
+2018-09-03 20:32:14.479  INFO 5080 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-03 20:32:14.486  INFO 5080 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-03 20:32:14.487  INFO 5080 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-03 20:32:14.487  INFO 5080 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-03 20:32:14.487  INFO 5080 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-03 20:32:15.554  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getCityData],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings2()
+2018-09-03 20:32:15.555  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getSum],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getSum(com.cts.sample.RequestFormat.ReqFormat)
+2018-09-03 20:32:15.556  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/makeCsvReport],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings1()
+2018-09-03 20:32:15.556  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByG],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByGet()
+2018-09-03 20:32:15.556  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByP],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByPost(java.lang.String)
+2018-09-03 20:32:15.557  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-03 20:32:15.560  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-03 20:32:15.562  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-03 20:32:15.564  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-03 20:32:15.565  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-03 20:32:15.566  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-03 20:32:15.822  INFO 5080 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Mon Sep 03 20:32:10 IST 2018]; root of context hierarchy
+2018-09-03 20:32:15.927  INFO 5080 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 20:32:15.927  INFO 5080 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 20:32:15.967  INFO 5080 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-03 20:32:16.254  INFO 5080 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-03 20:32:16.265  INFO 5080 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-03 20:32:16.265  INFO 5080 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-03 20:32:16.316  INFO 5080 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-03 20:32:16.337  INFO 5080 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-03 20:32:16.709  INFO 5080 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 22022 (http)
+Please wait making DB conection before initialization....
+Connection Successfull
+2018-09-03 20:32:16.716  INFO 5080 --- [           main] com.cts.sample.App                       : Started App in 7.867 seconds (JVM running for 8.723)
+Application Started!
+2018-09-03 20:32:35.578  INFO 5080 --- [io-22022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-03 20:32:35.578  INFO 5080 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-03 20:32:35.617  INFO 5080 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2018-09-04 12:34:21.982  INFO 7192 --- [           main] com.cts.sample.App                       : Starting App v1.0 on PC396927 with PID 7192 (C:\Users\410105\Desktop\service\sample-1.0.jar started by PC396927$ in C:\Users\410105\Desktop\service)
+2018-09-04 12:34:21.997  INFO 7192 --- [           main] com.cts.sample.App                       : No active profile set, falling back to default profiles: default
+2018-09-04 12:34:22.115  INFO 7192 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Tue Sep 04 12:34:22 IST 2018]; root of context hierarchy
+2018-09-04 12:34:24.882  INFO 7192 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$15f4cca3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-04 12:34:25.791  INFO 7192 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 22022 (http)
+2018-09-04 12:34:25.811  INFO 7192 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-09-04 12:34:25.813  INFO 7192 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-09-04 12:34:26.213  INFO 7192 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-04 12:34:26.213  INFO 7192 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4098 ms
+2018-09-04 12:34:26.369  INFO 7192 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-04 12:34:26.384  INFO 7192 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 12:34:26.384  INFO 7192 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 12:34:26.384  INFO 7192 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 12:34:26.384  INFO 7192 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 12:34:27.292  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByP],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByPost(java.lang.String)
+2018-09-04 12:34:27.292  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByG],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByGet()
+2018-09-04 12:34:27.292  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/makeCsvReport],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings1()
+2018-09-04 12:34:27.292  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getSum],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getSum(com.cts.sample.RequestFormat.ReqFormat)
+2018-09-04 12:34:27.292  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getCityData],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings2()
+2018-09-04 12:34:27.308  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-04 12:34:27.308  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-04 12:34:27.308  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-04 12:34:27.308  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-04 12:34:27.308  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 12:34:27.308  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 12:34:27.558  INFO 7192 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Tue Sep 04 12:34:22 IST 2018]; root of context hierarchy
+2018-09-04 12:34:27.651  INFO 7192 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 12:34:27.651  INFO 7192 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 12:34:27.683  INFO 7192 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 12:34:27.964  INFO 7192 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 12:34:27.979  INFO 7192 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-04 12:34:27.979  INFO 7192 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-04 12:34:28.026  INFO 7192 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-04 12:34:28.042  INFO 7192 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-04 12:34:28.401  INFO 7192 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 22022 (http)
+Please wait making DB conection before initialization....
+Connection Successfull
+2018-09-04 12:34:28.417  INFO 7192 --- [           main] com.cts.sample.App                       : Started App in 7.357 seconds (JVM running for 8.278)
+Application Started!
+2018-09-04 12:34:28.682  INFO 7192 --- [io-22022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 12:34:28.682  INFO 7192 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 12:34:28.714  INFO 7192 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 32 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2018-09-04 16:52:39.909  INFO 12440 --- [           main] com.cts.sample.App                       : Starting App v1.0 on PC396927 with PID 12440 (C:\Users\410105\Desktop\service\sample-1.0.jar started by PC396927$ in C:\Users\410105\Desktop\service)
+2018-09-04 16:52:39.915  INFO 12440 --- [           main] com.cts.sample.App                       : No active profile set, falling back to default profiles: default
+2018-09-04 16:52:40.034  INFO 12440 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Tue Sep 04 16:52:40 IST 2018]; root of context hierarchy
+2018-09-04 16:52:45.251  INFO 12440 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d77340a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-04 16:52:47.048  INFO 12440 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 22022 (http)
+2018-09-04 16:52:47.082  INFO 12440 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-09-04 16:52:47.085  INFO 12440 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-09-04 16:52:47.392  INFO 12440 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-04 16:52:47.392  INFO 12440 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7360 ms
+2018-09-04 16:52:47.650  INFO 12440 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-04 16:52:47.669  INFO 12440 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 16:52:47.681  INFO 12440 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 16:52:47.681  INFO 12440 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 16:52:47.681  INFO 12440 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 16:52:49.832  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getCityData],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings2()
+2018-09-04 16:52:49.834  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getSum],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getSum(com.cts.sample.RequestFormat.ReqFormat)
+2018-09-04 16:52:49.834  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/makeCsvReport],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings1()
+2018-09-04 16:52:49.834  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByP],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByPost(java.lang.String)
+2018-09-04 16:52:49.835  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByG],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByGet()
+2018-09-04 16:52:49.837  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-04 16:52:49.849  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-04 16:52:49.853  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-04 16:52:49.855  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-04 16:52:49.858  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 16:52:49.859  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 16:52:50.239  INFO 12440 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Tue Sep 04 16:52:40 IST 2018]; root of context hierarchy
+2018-09-04 16:52:50.413  INFO 12440 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 16:52:50.413  INFO 12440 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 16:52:50.499  INFO 12440 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 16:52:51.021  INFO 12440 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 16:52:51.054  INFO 12440 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-04 16:52:51.054  INFO 12440 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-04 16:52:51.152  INFO 12440 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-04 16:52:51.183  INFO 12440 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-04 16:52:52.153  INFO 12440 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 22022 (http)
+Please wait making DB conection before initialization....
+Connection Successfull
+2018-09-04 16:52:52.176  INFO 12440 --- [           main] com.cts.sample.App                       : Started App in 13.714 seconds (JVM running for 14.876)
+Application Started!
+2018-09-04 16:53:10.251  INFO 12440 --- [io-22022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-04 16:53:10.252  INFO 12440 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-04 16:53:10.321  INFO 12440 --- [io-22022-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 69 ms
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.4.2.RELEASE)
+
+2018-09-04 18:21:14.928  INFO 7788 --- [           main] com.cts.sample.App                       : Starting App v1.0 on PC396927 with PID 7788 (C:\Users\410105\Desktop\service\sample-1.0.jar started by PC396927$ in C:\Users\410105\Desktop\service)
+2018-09-04 18:21:14.935  INFO 7788 --- [           main] com.cts.sample.App                       : No active profile set, falling back to default profiles: default
+2018-09-04 18:21:15.037  INFO 7788 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Tue Sep 04 18:21:15 IST 2018]; root of context hierarchy
+2018-09-04 18:21:18.360  INFO 7788 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [class org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3d77340a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-04 18:21:19.502  INFO 7788 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 22022 (http)
+2018-09-04 18:21:19.531  INFO 7788 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2018-09-04 18:21:19.534  INFO 7788 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.6
+2018-09-04 18:21:19.739  INFO 7788 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-04 18:21:19.739  INFO 7788 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4704 ms
+2018-09-04 18:21:19.926  INFO 7788 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-04 18:21:19.934  INFO 7788 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-04 18:21:19.945  INFO 7788 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-04 18:21:19.945  INFO 7788 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-04 18:21:19.945  INFO 7788 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-04 18:21:21.151  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByG],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByGet()
+2018-09-04 18:21:21.153  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getGreetByP],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetingsByPost(java.lang.String)
+2018-09-04 18:21:21.153  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getSum],methods=[POST]}" onto public java.lang.String com.cts.sample.controller.Controller.getSum(com.cts.sample.RequestFormat.ReqFormat)
+2018-09-04 18:21:21.153  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/makeCsvReport],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings1()
+2018-09-04 18:21:21.153  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/greet/getCityData],methods=[GET]}" onto public java.lang.String com.cts.sample.controller.Controller.getGreetings2()
+2018-09-04 18:21:21.154  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET],produces=[application/json || application/hal+json]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)
+2018-09-04 18:21:21.157  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-09-04 18:21:21.158  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-09-04 18:21:21.160  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-09-04 18:21:21.163  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-04 18:21:21.163  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-04 18:21:21.463  INFO 7788 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7a4f0f29: startup date [Tue Sep 04 18:21:15 IST 2018]; root of context hierarchy
+2018-09-04 18:21:21.582  INFO 7788 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:21:21.582  INFO 7788 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:21:21.633  INFO 7788 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-04 18:21:22.022  INFO 7788 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-04 18:21:22.041  INFO 7788 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-04 18:21:22.041  INFO 7788 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-09-04 18:21:22.118  INFO 7788 --- [           main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2018-09-04 18:21:22.145  INFO 7788 --- [           main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-09-04 18:21:22.716  INFO 7788 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 22022 (http)
+Please wait making DB conection before initialization....
+Connection Successfull
+2018-09-04 18:21:22.758  INFO 7788 --- [           main] com.cts.sample.App                       : Started App in 9.007 seconds (JVM running for 9.918)
+Application Started!

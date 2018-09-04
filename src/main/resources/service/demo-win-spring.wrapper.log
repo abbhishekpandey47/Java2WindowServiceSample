@@ -1,0 +1,107 @@
+2018-09-03 17:49:40,283 DEBUG - Starting ServiceWrapper in the CLI mode
+2018-09-03 17:49:40,944 INFO  - Installing the service with id 'demo-win-spring'
+2018-09-03 17:49:41,084 DEBUG - Completed. Exit code is 0
+2018-09-03 17:49:49,814 DEBUG - Starting ServiceWrapper in the CLI mode
+2018-09-03 17:49:50,403 INFO  - Starting the service with id 'demo-win-spring'
+2018-09-03 17:49:50,728 INFO  - Starting ServiceWrapper in the service mode
+2018-09-03 17:49:50,749 DEBUG - Completed. Exit code is 0
+2018-09-03 17:49:50,838 INFO  - Starting java -jar sample-1.0.jar
+2018-09-03 17:49:50,842 INFO  - Starting java -jar sample-1.0.jar
+2018-09-03 17:49:50,932 INFO  - Started process 13108
+2018-09-03 17:49:50,946 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.DefaultLogAppender
+2018-09-03 17:51:50,911 INFO  - Stopping demo-win-spring
+2018-09-03 17:51:50,912 DEBUG - ProcessKill 13108
+2018-09-03 17:51:51,195 INFO  - Found child process: 11136 Name: conhost.exe
+2018-09-03 17:51:51,394 INFO  - Stopping process 11136
+2018-09-03 17:51:51,408 INFO  - Send SIGINT 11136
+2018-09-03 17:51:51,410 WARN  - SIGINT to 11136 failed - Killing as fallback
+2018-09-03 17:51:51,412 INFO  - Stopping process 13108
+2018-09-03 17:51:51,416 INFO  - Send SIGINT 13108
+2018-09-03 17:51:51,417 WARN  - SIGINT to 13108 failed - Killing as fallback
+2018-09-03 17:51:51,420 INFO  - Finished demo-win-spring
+2018-09-03 17:51:51,421 DEBUG - Completed. Exit code is 0
+2018-09-03 17:52:02,709 INFO  - Starting ServiceWrapper in the service mode
+2018-09-03 17:52:02,740 INFO  - Starting java -jar sample-1.0.jar
+2018-09-03 17:52:02,745 INFO  - Starting java -jar sample-1.0.jar
+2018-09-03 17:52:02,762 INFO  - Started process 5560
+2018-09-03 17:52:02,767 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.DefaultLogAppender
+2018-09-03 17:52:54,318 INFO  - Stopping demo-win-spring
+2018-09-03 17:52:54,319 DEBUG - ProcessKill 5560
+2018-09-03 17:52:54,558 INFO  - Found child process: 9300 Name: conhost.exe
+2018-09-03 17:52:54,753 INFO  - Stopping process 9300
+2018-09-03 17:52:54,756 INFO  - Send SIGINT 9300
+2018-09-03 17:52:54,758 WARN  - SIGINT to 9300 failed - Killing as fallback
+2018-09-03 17:52:54,761 INFO  - Stopping process 5560
+2018-09-03 17:52:54,765 INFO  - Send SIGINT 5560
+2018-09-03 17:52:54,765 WARN  - SIGINT to 5560 failed - Killing as fallback
+2018-09-03 17:52:54,769 INFO  - Finished demo-win-spring
+2018-09-03 17:52:54,770 DEBUG - Completed. Exit code is 0
+2018-09-03 17:56:51,693 INFO  - Starting ServiceWrapper in the service mode
+2018-09-03 17:56:51,727 INFO  - Starting java -jar sample-1.0.jar
+2018-09-03 17:56:51,731 INFO  - Starting java -jar sample-1.0.jar
+2018-09-03 17:56:51,749 INFO  - Started process 4556
+2018-09-03 17:56:51,755 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.DefaultLogAppender
+2018-09-03 20:32:05,782 INFO  - Stopping demo-win-spring
+2018-09-03 20:32:05,793 DEBUG - ProcessKill 4556
+2018-09-03 20:32:06,199 INFO  - Found child process: 14092 Name: conhost.exe
+2018-09-03 20:32:06,391 INFO  - Stopping process 14092
+2018-09-03 20:32:06,404 INFO  - Send SIGINT 14092
+2018-09-03 20:32:06,407 WARN  - SIGINT to 14092 failed - Killing as fallback
+2018-09-03 20:32:06,437 INFO  - Stopping process 4556
+2018-09-03 20:32:06,440 INFO  - Send SIGINT 4556
+2018-09-03 20:32:06,441 WARN  - SIGINT to 4556 failed - Killing as fallback
+2018-09-03 20:32:06,444 INFO  - Finished demo-win-spring
+2018-09-03 20:32:06,446 DEBUG - Completed. Exit code is 0
+2018-09-03 20:32:07,304 INFO  - Starting ServiceWrapper in the service mode
+2018-09-03 20:32:07,375 INFO  - Starting java -jar sample-1.0.jar
+2018-09-03 20:32:07,379 INFO  - Starting java -jar sample-1.0.jar
+2018-09-03 20:32:07,412 INFO  - Started process 5080
+2018-09-03 20:32:07,418 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.DefaultLogAppender
+2018-09-04 12:34:06,636 INFO  - Stopping demo-win-spring
+2018-09-04 12:34:06,667 DEBUG - ProcessKill 5080
+2018-09-04 12:34:07,416 INFO  - Found child process: 14812 Name: conhost.exe
+2018-09-04 12:34:07,619 INFO  - Stopping process 14812
+2018-09-04 12:34:07,635 INFO  - Send SIGINT 14812
+2018-09-04 12:34:07,635 WARN  - SIGINT to 14812 failed - Killing as fallback
+2018-09-04 12:34:07,651 INFO  - Stopping process 5080
+2018-09-04 12:34:07,651 INFO  - Send SIGINT 5080
+2018-09-04 12:34:07,651 WARN  - SIGINT to 5080 failed - Killing as fallback
+2018-09-04 12:34:07,651 INFO  - Finished demo-win-spring
+2018-09-04 12:34:07,666 DEBUG - Completed. Exit code is 0
+2018-09-04 12:34:19,166 INFO  - Starting ServiceWrapper in the service mode
+2018-09-04 12:34:19,197 INFO  - Starting java -jar sample-1.0.jar
+2018-09-04 12:34:19,213 INFO  - Starting java -jar sample-1.0.jar
+2018-09-04 12:34:19,229 INFO  - Started process 7192
+2018-09-04 12:34:19,229 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.DefaultLogAppender
+2018-09-04 16:52:23,168 INFO  - Stopping demo-win-spring
+2018-09-04 16:52:23,187 DEBUG - ProcessKill 7192
+2018-09-04 16:52:23,954 INFO  - Found child process: 3044 Name: conhost.exe
+2018-09-04 16:52:24,246 INFO  - Stopping process 3044
+2018-09-04 16:52:24,275 INFO  - Send SIGINT 3044
+2018-09-04 16:52:24,301 WARN  - SIGINT to 3044 failed - Killing as fallback
+2018-09-04 16:52:24,314 INFO  - Stopping process 7192
+2018-09-04 16:52:24,321 INFO  - Send SIGINT 7192
+2018-09-04 16:52:24,322 WARN  - SIGINT to 7192 failed - Killing as fallback
+2018-09-04 16:52:24,326 INFO  - Finished demo-win-spring
+2018-09-04 16:52:24,329 DEBUG - Completed. Exit code is 0
+2018-09-04 16:52:36,375 INFO  - Starting ServiceWrapper in the service mode
+2018-09-04 16:52:36,413 INFO  - Starting java -jar sample-1.0.jar
+2018-09-04 16:52:36,416 INFO  - Starting java -jar sample-1.0.jar
+2018-09-04 16:52:36,444 INFO  - Started process 12440
+2018-09-04 16:52:36,449 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.DefaultLogAppender
+2018-09-04 16:53:20,595 INFO  - Stopping demo-win-spring
+2018-09-04 16:53:20,596 DEBUG - ProcessKill 12440
+2018-09-04 16:53:20,910 INFO  - Found child process: 13468 Name: conhost.exe
+2018-09-04 16:53:21,168 INFO  - Stopping process 13468
+2018-09-04 16:53:21,172 INFO  - Send SIGINT 13468
+2018-09-04 16:53:21,174 WARN  - SIGINT to 13468 failed - Killing as fallback
+2018-09-04 16:53:21,177 INFO  - Stopping process 12440
+2018-09-04 16:53:21,180 INFO  - Send SIGINT 12440
+2018-09-04 16:53:21,181 WARN  - SIGINT to 12440 failed - Killing as fallback
+2018-09-04 16:53:21,185 INFO  - Finished demo-win-spring
+2018-09-04 16:53:21,190 DEBUG - Completed. Exit code is 0
+2018-09-04 18:21:12,044 INFO  - Starting ServiceWrapper in the service mode
+2018-09-04 18:21:12,078 INFO  - Starting java -jar sample-1.0.jar
+2018-09-04 18:21:12,081 INFO  - Starting java -jar sample-1.0.jar
+2018-09-04 18:21:12,109 INFO  - Started process 7788
+2018-09-04 18:21:12,114 DEBUG - Forwarding logs of the process System.Diagnostics.Process (java) to winsw.DefaultLogAppender
